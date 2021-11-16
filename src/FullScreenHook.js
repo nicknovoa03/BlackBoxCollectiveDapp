@@ -15,16 +15,16 @@ import AsyncConnect from './AsyncConnect';
 
 function FullScreenHook() {
 
-    const [wallet, menaceContract, menaceAddress, web3] = AsyncConnect();
+    const [wallet, accessPassContract, accessPassAddress, web3] = AsyncConnect();
     const [mintAmount, setMintAmount] = useState();
 
     async function mint(mintAmount, contract, wallet) {
-        console.log("Mint ", mintAmount, " Menaces");
+        console.log("Mint ", mintAmount, " Access Passes");
         const gasprice = await web3.eth.getGasPrice()
         const price = mintAmount * 10**18;
         console.log("Price:",price)
         // call transfer function
-        menaceContract.methods.mintMenace(mintAmount.toString()).send({ from: wallet, gasprice: gasprice, value: price})
+        accessPassContract.methods.mintAccessPass(mintAmount.toString()).send({ from: wallet, gasprice: gasprice, value: price})
     }
 
     function handleSlider(event, value) {
@@ -34,7 +34,7 @@ function FullScreenHook() {
 
     function handleMint(event) {
         event.preventDefault();
-        mint(mintAmount, menaceContract, wallet);
+        mint(mintAmount, accessPassContract, wallet);
     }
 
     const darkTheme = createTheme({
@@ -191,7 +191,7 @@ function FullScreenHook() {
                                     m: 1
                                 }}
                             >
-                                Contract Address: {menaceAddress}
+                                Contract Address: {accessPassAddress}
                             </Typography>
                             <Copyright sx={{ mt: 1 }} />
                         </Box>
