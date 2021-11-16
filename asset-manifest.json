@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/BlackBoxCollectiveDapp/static/js/main.38dff745.chunk.js",
-    "main.js.map": "/BlackBoxCollectiveDapp/static/js/main.38dff745.chunk.js.map",
-    "runtime-main.js": "/BlackBoxCollectiveDapp/static/js/runtime-main.6c0d5797.js",
-    "runtime-main.js.map": "/BlackBoxCollectiveDapp/static/js/runtime-main.6c0d5797.js.map",
-    "static/js/2.5da62264.chunk.js": "/BlackBoxCollectiveDapp/static/js/2.5da62264.chunk.js",
-    "static/js/2.5da62264.chunk.js.map": "/BlackBoxCollectiveDapp/static/js/2.5da62264.chunk.js.map",
+    "main.js": "/BlackBoxCollectiveDapp/static/js/main.d189fbb6.chunk.js",
+    "main.js.map": "/BlackBoxCollectiveDapp/static/js/main.d189fbb6.chunk.js.map",
+    "runtime-main.js": "/BlackBoxCollectiveDapp/static/js/runtime-main.a4b448c0.js",
+    "runtime-main.js.map": "/BlackBoxCollectiveDapp/static/js/runtime-main.a4b448c0.js.map",
+    "static/js/2.1a38711b.chunk.js": "/BlackBoxCollectiveDapp/static/js/2.1a38711b.chunk.js",
+    "static/js/2.1a38711b.chunk.js.map": "/BlackBoxCollectiveDapp/static/js/2.1a38711b.chunk.js.map",
     "index.html": "/BlackBoxCollectiveDapp/index.html",
-    "static/js/2.5da62264.chunk.js.LICENSE.txt": "/BlackBoxCollectiveDapp/static/js/2.5da62264.chunk.js.LICENSE.txt",
-    "static/media/MintBackground.84661a03.jpg": "/BlackBoxCollectiveDapp/static/media/MintBackground.84661a03.jpg"
+    "static/js/2.1a38711b.chunk.js.LICENSE.txt": "/BlackBoxCollectiveDapp/static/js/2.1a38711b.chunk.js.LICENSE.txt",
+    "static/media/MintBackground.63a27851.GIF": "/BlackBoxCollectiveDapp/static/media/MintBackground.63a27851.GIF"
   },
   "entrypoints": [
-    "static/js/runtime-main.6c0d5797.js",
-    "static/js/2.5da62264.chunk.js",
-    "static/js/main.38dff745.chunk.js"
+    "static/js/runtime-main.a4b448c0.js",
+    "static/js/2.1a38711b.chunk.js",
+    "static/js/main.d189fbb6.chunk.js"
   ]
 }
