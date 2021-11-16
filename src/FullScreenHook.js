@@ -9,7 +9,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 import Slider from '@mui/material/Slider';
-import MintBackground from './AccessPassSamples/MintBackground.jpg'
+import MintBackground from './AccessPassSamples/MintBackground.GIF'
 
 import AsyncConnect from './AsyncConnect';
 
@@ -53,8 +53,8 @@ function FullScreenHook() {
         return (
             <Typography variant="body2" color="text.secondary" align="center" {...props}>
                 {'Copyright © '}
-                <Link color="inherit" href="https://www.menace.world/">
-                    Menace World
+                <Link color="inherit" href="https://www.blackboxcollective.io/">
+                    Black Box Collective
                 </Link>{' '}
                 {new Date().getFullYear()}
                 {'.'}
@@ -144,7 +144,7 @@ function FullScreenHook() {
                                 display='flex'
                                 justifyContent='center'
                             >
-                                ENTER THE MENACE WORLD
+                                BLACK BOX COLLECTIVE 
                             </Typography>
                             <Slider
                                 onChangeCommitted={(events, value) => handleSlider(events, value)}
