@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/BlackBoxCollectiveDapp/static/js/main.27f9ce4d.chunk.js",
-    "main.js.map": "/BlackBoxCollectiveDapp/static/js/main.27f9ce4d.chunk.js.map",
+    "main.js": "/BlackBoxCollectiveDapp/static/js/main.b2baa2c5.chunk.js",
+    "main.js.map": "/BlackBoxCollectiveDapp/static/js/main.b2baa2c5.chunk.js.map",
     "runtime-main.js": "/BlackBoxCollectiveDapp/static/js/runtime-main.a4b448c0.js",
     "runtime-main.js.map": "/BlackBoxCollectiveDapp/static/js/runtime-main.a4b448c0.js.map",
     "static/js/2.1a38711b.chunk.js": "/BlackBoxCollectiveDapp/static/js/2.1a38711b.chunk.js",
@@ -13,6 +13,6 @@
   "entrypoints": [
     "static/js/runtime-main.a4b448c0.js",
     "static/js/2.1a38711b.chunk.js",
-    "static/js/main.27f9ce4d.chunk.js"
+    "static/js/main.b2baa2c5.chunk.js"
   ]
 }
