@@ -154,7 +154,7 @@ function FullScreenHook() {
                                 step={1}
                                 marks
                                 min={0}
-                                max={2}
+                                max={1}
                                 sx={{
                                     color: 'text.primary'
                                 }}
