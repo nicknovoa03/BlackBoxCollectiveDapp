@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ethers } from 'ethers';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
@@ -6,25 +7,25 @@ import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import Slider from '@mui/material/Slider';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
-import Slider from '@mui/material/Slider';
 import MintBackground from './AccessPassSamples/MintBackground.GIF'
-
 import AsyncConnect from './AsyncConnect';
+
+
 
 function FullScreenHook() {
 
     const [wallet, accessPassContract, accessPassAddress, web3] = AsyncConnect();
     const [mintAmount, setMintAmount] = useState();
 
-    async function mint(mintAmount, contract, wallet) {
+    async function mint(mintAmount, wallet) {
         console.log("Mint ", mintAmount, " Access Passes");
-        const gasprice = await web3.eth.getGasPrice()
-        const price = mintAmount * 10**18;
-        console.log("Price:",price)
+        var price = ethers.utils.parseEther("1.95")['_hex'] * mintAmount
+        console.log("Price:", price)
         // call transfer function
-        accessPassContract.methods.mintAccessPass(mintAmount.toString()).send({ from: wallet, gasprice: gasprice, value: price})
+        accessPassContract.methods.mintAccessPass(mintAmount.toString()).send({ from: wallet, value: price })
     }
 
     function handleSlider(event, value) {
@@ -144,7 +145,7 @@ function FullScreenHook() {
                                 display='flex'
                                 justifyContent='center'
                             >
-                                BLACK BOX COLLECTIVE 
+                                BLACK BOX COLLECTIVE
                             </Typography>
                             <Slider
                                 onChangeCommitted={(events, value) => handleSlider(events, value)}
