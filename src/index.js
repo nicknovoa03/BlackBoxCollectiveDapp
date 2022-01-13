@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import HookApp from './FullScreenHook'
+import HookApp from './MintScreen'
 
 ReactDOM.render(
   <React.StrictMode>
