@@ -96,8 +96,8 @@ function SideScreen() {
         return (
             <Typography variant="body2" color="text.secondary" align="center" {...props}>
                 {'Copyright © '}
-                <Link color="inherit" href="https://www.TheNFTninjas.com/">
-                    NFT Ninjas
+                <Link color="inherit" href="https://www.blackboxcollective.io/">
+                    Black Box Collective
                 </Link>{' '}
                 {new Date().getFullYear()}
                 {'.'}
@@ -135,10 +135,6 @@ function SideScreen() {
         {
             value: 2,
             label: '2',
-        },
-        {
-            value: 3,
-            label: '3',
         }
     ];
 
@@ -203,7 +199,7 @@ function SideScreen() {
                             step={1}
                             marks={marks}
                             min={1}
-                            max={3}
+                            max={2}
                             sx={{
                                 color: 'text.primary',
                                 mb: 4
