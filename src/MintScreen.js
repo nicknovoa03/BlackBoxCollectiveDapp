@@ -68,7 +68,7 @@ function SideScreen() {
             from: wallet,
             to: contractAddr,
             value: ethers.utils.parseEther(mintable_price)["_hex"],
-            gas: 210000,
+            gas: 200000 * mintAmount,
             data: contract.methods.mintAccessPass(mintAmount).encodeABI(),
         };
 
@@ -161,7 +161,7 @@ function SideScreen() {
 
 
     return (
-        <ThemeProvider theme={darkTheme} >
+        <ThemeProvider theme={darkTheme}>
             <Grid container component="main" sx={{ height: '100vh' }}>
                 <CssBaseline />
                 <Grid item xs={12} sm={12} md={12} lg={12} sx={{
@@ -176,7 +176,7 @@ function SideScreen() {
                     <Box
                         sx={{
                             mt: 1,
-                            marginTop: 12,
+                            marginTop: 20,
                             mx: 5,
                             display: 'flex',
                             flexDirection: 'column',
@@ -187,7 +187,7 @@ function SideScreen() {
                             component="img"
                             sx={{
                                 height: 250,
-                                width:  375,
+                                width: 375,
                             }}
                             alt="The house from the offer."
                             src={logo}
